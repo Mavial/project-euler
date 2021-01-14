@@ -1,3 +1,4 @@
+num = 600851475143
 def is_prime(n):
     if n <= 1: return False
     if n <= 3: return True
@@ -7,9 +8,11 @@ def is_prime(n):
     return True
 i = 2
 while True:
-    if not 600851475143 % i == 0: i += 1
+    if not num % i == 0: i += 1
     else:
-        if is_prime(int(600851475143/i)): break
+        if is_prime(int(num/i)): break
         else: i += 1
 
-print(int(600851475143/i))
+print(int(num/i))
+
+# not very proud of this.
