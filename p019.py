@@ -96,3 +96,9 @@ sundays = 0
 calendar = Calendar(30, 12, 1900)
 
 # the loop advances the date by 7 days
+for i in range(1, 100 * 365, 7):
+    calendar.advance_date(7)
+    if calendar._day.get_day() == 1:
+        sundays += 1
+
+print(sundays)
