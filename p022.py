@@ -1,4 +1,5 @@
 def sort(names_list: list[str]):
+    """Sorts names_list in alphabetical order"""
     if len(names_list) <= 1:
         return names_list
     pivot = names_list[0]
