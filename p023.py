@@ -25,4 +25,4 @@ for i1, val1 in enumerate(abundant_numbers):
             sieve.remove(sum_of_abundant_nums)
 
 # Print the final answer
-print(sieve, sum(sieve))
+print(sum(sieve))
